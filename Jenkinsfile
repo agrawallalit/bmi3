@@ -2,7 +2,7 @@ pipeline {
     agent any
       stages {
         stage('Build') {
-            mvn clean install 
+            echo"hello Project is ready to build"
             }
            }
          }
