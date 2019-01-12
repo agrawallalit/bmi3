@@ -1,8 +1,15 @@
 pipeline {
-    agent any
-      stages {
-        stage('Build') {
-            echo"hello Project is ready to build"
+    agent none 
+    stages {
+        stage('Example Build') {
+            steps {
+                echo 'Hello, Maven'
             }
-           }
-         }
+        }
+        stage('Example Test') { 
+            steps {
+                echo 'Hello, JDK'
+            }
+        }
+    }
+}
